@@ -33,11 +33,16 @@ trigger.addEventListener('click', function () {
 const diceTrigger = document.querySelector(".dice")
 diceTrigger.addEventListener('click', function () {
 
+
     const userDice = Math.floor(Math.random() * 6) + 1;
     console.log(userDice);
+    let userOutput = document.querySelector(".user-dice");
+    userOutput.innerHTML+= userDice;
 
     const pcDice = Math.floor(Math.random() * 6) + 1;
     console.log(pcDice);
+    let pcOutput = document.querySelector(".pc-dice");
+    pcOutput.innerHTML+= pcDice;
 
 
     if (userDice > pcDice) {
