@@ -15,7 +15,7 @@ trigger.addEventListener('click', function () {
         if (email == element) {
             console.log("Benvenuto, si accomodi!");
 
-        } else (email != element)
+        } else (email !== element)
         console.log("Spiacente, lei non può entrare");
 
     }
