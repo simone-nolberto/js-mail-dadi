@@ -13,11 +13,10 @@ trigger.addEventListener('click', function () {
         const element = party[index];
 
         if (email == element) {
-            console.log("Benvenuto, si accomodi!");
+            alert("Benvenuto, si accomodi!");
 
         } else (email !== element)
-        console.log("Spiacente, lei non può entrare");
-
+            alert("Spiacente, lei non può entrare");
     }
 
 });
