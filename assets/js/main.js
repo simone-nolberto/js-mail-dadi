@@ -8,16 +8,22 @@ const trigger = document.querySelector(".enter")
 trigger.addEventListener('click', function () {
     let email = userEmail.value;
     console.log(email);
+    let control = false;
 
     for (let index = 0; index < party.length; index++) {
         const element = party[index];
 
         if (element === email) {
-            alert("Benvenuto, si accomodi!");
-        } else (element !== email)
-        alert("Spiacente, lei non può entrare");
+            control = true;
+        }
+
     }
 
+    if (control) {
+        alert("Benvenuto, si accomodi!");
+    } else {
+        alert("Spiacente, lei non può entrare");
+    }
 
 });
 
