@@ -6,12 +6,29 @@ console.log(party);
 
 for (let index = 0; index < party.length; index++) {
     const element = party[index];
-    console.log(element);
 
-    // if (element === userEmail) {
-    //     console.log("Benvenuto, si accomodi!");
-    // } else {
-    //     console.log("Spiacente, lei non può entrare");
-    // }
+    if (userEmail == element) {
+        console.log("Benvenuto, si accomodi!");
+        
+    } else (userEmail != element)
 
+        console.log("Spiacente, lei non può entrare");
+    
+}
+
+
+// esercizio Dadi:
+
+
+const userDice = Math.floor(Math.random() * 6) + 1;
+console.log(userDice);
+
+const pcDice = Math.floor(Math.random() * 6) + 1;
+console.log(pcDice);
+
+
+if (userDice > pcDice){
+    console.log("Complimenti, ha vinto!");
+} else {
+    console.log("spiacenti, ritenti, sarà più fortunato");
 }
