@@ -12,12 +12,12 @@ trigger.addEventListener('click', function () {
     for (let index = 0; index < party.length; index++) {
         const element = party[index];
 
-        if (email == element) {
+        if (element === email) {
             alert("Benvenuto, si accomodi!");
-
-        } else (email !== element)
-            alert("Spiacente, lei non può entrare");
+        } else (element !== email)
+        alert("Spiacente, lei non può entrare");
     }
+
 
 });
 
