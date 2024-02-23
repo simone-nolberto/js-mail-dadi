@@ -30,25 +30,28 @@ trigger.addEventListener('click', function () {
 
 // esercizio Dadi:
 
-const diceTrigger = document.querySelector(".dice")
+const diceTrigger = document.querySelector(".dice");
+let textOutput = document.querySelector(".text");
 diceTrigger.addEventListener('click', function () {
 
 
     const userDice = Math.floor(Math.random() * 6) + 1;
     console.log(userDice);
     let userOutput = document.querySelector(".user-dice");
-    userOutput.innerHTML+= userDice;
+    userOutput.innerHTML = userDice;
 
     const pcDice = Math.floor(Math.random() * 6) + 1;
     console.log(pcDice);
     let pcOutput = document.querySelector(".pc-dice");
-    pcOutput.innerHTML+= pcDice;
+    pcOutput.innerHTML = pcDice;
 
 
     if (userDice > pcDice) {
         console.log("Complimenti, ha vinto!");
+        textOutput.innerHTML = "Complimenti, ha vinto!"
     } else {
         console.log("spiacenti, ritenti, sarà più fortunato");
+        textOutput.innerHTML = "Spiacente, ritenti, sarà più fortunato";
     }
 
-})
+});
